@@ -5,7 +5,7 @@
 <b> Overview </b>
 
 
-This project showcases an end-to-end automated data engineering pipeline built on Microsoft Azure. The pipeline automates the entire lifecycle—from moving raw data via Azure Data Factory to cleaning and transforming it in Databricks using PySpark, and finally visualizing the results in Power BI. This solution effectively transforms raw, distributed data into actionable insights for healthcare management and clinical analysis.
+This project showcases an end-to-end healthcare analytics pipeline built on Microsoft Azure. Azure Data Factory is used to ingest raw healthcare data from GitHub into the Bronze layer in Azure Data Lake Storage (ADLS), and Databricks is used to clean, transform, and curate the data through Silver and Gold layers using PySpark. The final Gold layer is stored in Azure SQL Database, which is then connected to Power BI for reporting and dashboard creation focused on patient demographics, billing analysis, hospital utilization, and length-of-stay trends.
 
 
 
@@ -33,7 +33,7 @@ This project follows a Medallion architecture approach:
    - Databricks notebooks clean the raw data, standardize column types, and prepare structured data for downstream use.
 
 4. **Gold Layer**
-   - Business-ready transformations and aggregations are created for analytics and reporting.
+   - Business-ready transformations and aggregations are stored in Azure SQL DB for analytics and reporting.
 
 5. **Visualization**
    - Power BI connects to the curated Gold layer to build interactive dashboards and trend analysis reports.
@@ -67,7 +67,7 @@ Clinical Analytics: Billing trends categorized by admission type and medical con
 <b> Technologies Used </b> 
 
 
-Data Engineering: Databricks, PySpark, Parquet, Delta Lake,Azure Data Lake Storage(ADLS Gen 2),Azure Data Factory
+Data Engineering: Databricks, PySpark, Parquet, Delta Lake,Azure Data Lake Storage(ADLS Gen 2),Azure Data Factory,Azure SQL DB
 
 Data Visualization: Power BI.
 
