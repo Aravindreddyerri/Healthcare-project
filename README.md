@@ -65,6 +65,8 @@ Clinical Analytics: Billing trends categorized by admission type and medical con
 
 
 <b> Technologies Used </b> 
+
+
 Data Engineering: Databricks, PySpark, Parquet, Delta Lake,Azure Data Lake Storage(ADLS Gen 2),Azure Data Factory
 
 Data Visualization: Power BI.
